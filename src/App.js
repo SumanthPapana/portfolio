@@ -1,3 +1,4 @@
+
 // Portfolio.jsx
 import React, { useState } from "react";
 import {
@@ -22,6 +23,9 @@ import {
   Cctv,
   Code,
   TestTube,
+  Battery,
+  Settings,
+  Cloud,
 } from "lucide-react";
 
 import "./App.css";
@@ -47,242 +51,242 @@ const App = () => {
 
   const experiences = [
     {
-      company: "Microchip Technology",
-      role: "Embedded System Developer (Virtual Internship)",
-      duration: "10-week Virtual Internship",
-      description: [
-        "Completed a 10-week Embedded Systems Developer Virtual Internship, gaining hands-on experience in microcontroller-based system design, sensor interfacing, and real-time embedded programming using Embedded C.",
-        "Developed and tested embedded firmware for hardware peripherals, focusing on GPIO, timers, interrupts, and serial communication, following industry-standard development practices.",
-        "Strengthened practical knowledge of embedded system architecture, debugging techniques, and hardware-software integration through guided labs and project-based learning.",
-      ],
-      technologies: [
-        "Embedded C",
-        "Microcontrollers",
-        "GPIO",
-        "Timers",
-        "Interrupts",
-        "Serial Communication",
-      ],
-      icon: <Cpu className="text-gray-700" size={24} />,
-    },
-    {
-      company: "Technical Hub Pvt Ltd",
-      role: "Web Development Intern",
+      company: "Venky's Vision IT Solutions",
+      role: "Intern",
       duration: "Internship",
       description: [
-        "Learned HTML, CSS, and Bootstrap, focusing on building responsive and well-structured web pages.",
-        "Actively participated in technical bootcamps, gaining hands-on exposure to practical web development concepts.",
-        "Developed responsive web interfaces using HTML5, CSS3, and JavaScript following MVC architecture principles.",
-        "Implemented object-oriented design patterns in front-end development that improved code maintainability and reusability.",
-        "Created reusable UI components with Bootstrap that ensured cross-browser compatibility and responsive design.",
+        "Gained hands-on training in Power Systems, Renewable Energy, and Automation relevant to EEE industry.",
+        "Mentored learners in industrial and academic projects, focusing on real-time applications like automation, renewable energy systems, and electric vehicles.",
       ],
       technologies: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Bootstrap",
-        "MVC Architecture",
+        "Power Systems",
+        "Renewable Energy",
+        "Automation",
+        "Electric Vehicles",
+        "Industrial Projects",
       ],
-      icon: <Code className="text-gray-700" size={24} />,
+      icon: <Settings className="text-gray-700" size={24} />,
     },
   ];
 
   const certifications = [
     {
-      name: "Embedded Systems And IoT Programming",
-      issuer: "TESSOLVE",
+      name: "Java Full Stack by WIPRO TALENT NEXT",
+      issuer: "Wipro",
       date: "Completed",
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop&q=80",
       verifyLink: "#",
-      icon: <Cpu className="text-gray-700" size={20} />,
+      description:
+        "Completed the Java Full Stack Development Certification under the Wipro TalentNext (WTN) program, gaining strong proficiency in both front-end and back-end development.",
+      details: [
+        "Hands-on experience in building full-stack applications using Core Java, HTML, JavaScript, and MySQL.",
+        "Developed and deployed end-to-end project modules, focusing on clean coding practices, API integration, and scalable application design.",
+      ],
+      icon: <Code className="text-gray-700" size={20} />,
     },
     {
-      name: "Embedded System Application And IoT Programming",
-      issuer: "TESSOLVE",
+      name: "Autodesk FUSION 360",
+      issuer: "Autodesk",
       date: "Completed",
       image:
         "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop&q=80",
       verifyLink: "#",
-      icon: <Zap className="text-gray-700" size={20} />,
+      description:
+        "Learned CAD/CAM modeling, rendering, and simulation in mechanical engineering context.",
+      details: [
+        "Gained hands-on experience in 3D CAD/CAM modeling, rendering, and mechanical design simulation.",
+        "Designed and analyzed mechanical components to understand real-world engineering workflows.",
+      ],
+      icon: <Settings className="text-gray-700" size={20} />,
     },
     {
-      name: "MATLAB Onramp",
-      issuer: "MathWorks",
+      name: "AIML Using Python [Industrial Automation Level-1]",
+      issuer: "Tesolve",
       date: "Completed",
       image:
         "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=300&fit=crop&q=80",
       verifyLink: "#",
-      icon: <Database className="text-gray-700" size={20} />,
+      description:
+        "Applied AIML for predictive monitoring and analytics in industrial automation using Python.",
+      details: [
+        "Built and tested Python-based ML models for automation and equipment health assessment.",
+        "Developed a solid foundation in data preprocessing, model training, and industrial data insights.",
+      ],
+      icon: <Cpu className="text-gray-700" size={20} />,
     },
     {
-      name: "IT Specialist - HTML and CSS",
-      issuer: "Certiport",
+      name: "AIML Using Python [Industrial Automation Level-2]",
+      issuer: "Taras",
       date: "Completed",
       image:
         "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop&q=80",
       verifyLink: "#",
-      icon: <Code className="text-gray-700" size={20} />,
+      description:
+        "Implemented advanced ML models for real-time anomaly detection and predictive maintenance in industrial systems using Python.",
+      details: [
+        "Worked on optimizing models for fault detection and performance prediction in industrial processes.",
+        "Enhanced understanding of end-to-end ML pipelines, from sensor data acquisition to model deployment.",
+      ],
+      icon: <Cpu className="text-gray-700" size={20} />,
     },
   ];
 
   const achievements = [
     {
-      title: "Finalist – Aerohack 2025 (Electronics Track, Individual)",
+      title: "Library Committee Head – Academic Excellence",
       description:
-        "Designed and demonstrated a cost-effective, lightweight bird-attack deterrence system for medical delivery drones, addressing real-world constraints such as wind gusts and drizzle, and ensuring safe flight over a 10 km hilly route.",
-      date: "2025",
-      icon: <Shield className="text-gray-700" size={24} />,
-    },
-    {
-      title: "Agentblazer Champion - Salesforce Trailhead",
-      description:
-        "Earned the prestigious Agentblazer Champion badge by completing advanced modules on Salesforce AI, automation, and customer engagement. Demonstrated hands-on proficiency through real-world guided challenges.",
-      date: "Achieved",
+        "Appointed as committee head for securing 7th rank and consistent performance in EEE Department.",
+      date: "Academic",
       icon: <Award className="text-gray-700" size={24} />,
     },
     {
-      title: "Merit Scholarship - KL University",
+      title: "Spark Team Member – KL University 2024",
       description:
-        "Honored with a scholarship worth 3.6 lakhs from KLEF for achieving 90.9% in Diploma studies.",
-      date: "2023",
+        "Organized cultural and tech events, handled logistics and faculty coordination.",
+      date: "2024",
       icon: <Award className="text-gray-700" size={24} />,
+    },
+    {
+      title: "EV Club Member – KL University",
+      description:
+        "Led innovation initiatives in EV design and collaborated with industry mentors.",
+      date: "Club Activity",
+      icon: <Zap className="text-gray-700" size={24} />,
     },
   ];
 
   const projects = [
     {
       id: 1,
-      title:
-        "Fingerprint based Vehicle Starter | RFID Technology, Arduino Nano",
+      title: "Robotic Arm Design using Fusion 360",
       description:
-        "Designed and implemented a dual-authentication vehicle security system utilizing fingerprint recognition (R307 sensor) and RFID technology (RC522 module) with Arduino Nano as the central microcontroller.",
+        "Designed and simulated a modular robotic arm using Fusion 360 with custom end-effector and 3D-printable parts.",
       detailedDescription: [
-        "Dual-authentication security system combining fingerprint and RFID technology",
-        "128-bit AES encryption for secure data storage and transmission",
-        "Relay control system interfaces with vehicle ignition without modifying OEM wiring",
-        "Fail-safe protocols prevent vehicle disabling during system malfunction",
-        "Low-power sleep mode achieves 95% power reduction during idle periods",
-        "Bluetooth compatibility for remote monitoring and control",
+        "Applied CAD simulation and stress analysis tools to evaluate structural integrity, material selection, and load-bearing efficiency.",
+        "Improved design accuracy and performance reliability through comprehensive analysis.",
+        "Enhanced the arm's efficiency by optimizing joint torque distribution and reducing weight using topology optimization in Fusion 360.",
+        "Created custom end-effector designs for various applications.",
+        "Developed 3D-printable parts for rapid prototyping and testing.",
       ],
       technologies: [
-        "Arduino Nano",
-        "RFID RC522",
-        "Fingerprint R307",
-        "AES Encryption",
-        "C Programming",
-        "Bluetooth",
-        "Relay Control",
+        "Fusion 360",
+        "CAD Design",
+        "3D Modeling",
+        "Stress Analysis",
+        "Topology Optimization",
+        "3D Printing",
       ],
-      icon: <Shield className="text-gray-700" size={24} />,
+      icon: <Settings className="text-gray-700" size={24} />,
     },
     {
       id: 2,
-      title: "Hand Gesture Vocalizer | ESP32 Micro-Controller",
+      title: "Battery Health Monitoring for EVs via Mobile Application",
       description:
-        "Developed a gesture recognition system using an ESP32 microcontroller, enabling real-time vocalization of hand gestures.",
+        "Developed ESP32-based system to monitor voltage, current, temperature, and SOC with real-time mobile app alerts.",
       detailedDescription: [
-        "Real-time gesture recognition and vocalization system",
-        "ESP32 microcontroller with flex sensors and accelerometer integration",
-        "AI-powered gesture interpretation for device control",
-        "Wireless communication capabilities",
-        "Speaker output for real-time voice feedback",
-        "Complex gesture pattern recognition",
+        "Integrated real-time battery data on mobile app with alerts for abnormal conditions.",
+        "Implemented data transmission using IoT protocols for seamless communication.",
+        "Optimized sensor calibration to ensure accurate, low-latency monitoring of battery performance.",
+        "Developed an intuitive mobile dashboard for live battery analytics and early fault alerts.",
+        "Utilized Bluetooth communication with ESP32 for wireless data transmission.",
+        "Implemented State of Charge (SOC) estimation algorithms for accurate battery status.",
       ],
       technologies: [
         "ESP32",
-        "Arduino IDE",
-        "Flex Sensors",
-        "Accelerometer",
-        "AI",
-        "C++",
-        "Wireless Communication",
+        "IoT",
+        "Bluetooth",
+        "Mobile Development",
+        "Sensor Integration",
+        "Battery Management",
+        "Python",
       ],
-      icon: <Mic className="text-gray-700" size={24} />,
+      icon: <Battery className="text-gray-700" size={24} />,
     },
     {
       id: 3,
-      title: "Turning Trash into Treasure: Waste-to-Energy Solutions",
+      title: "Bluetooth Controlled Robot Using Raspberry Pi Pico W Board",
       description:
-        "Constructed a model demonstrating waste heat conversion using Peltier modules, providing sustainable energy solutions.",
+        "Built a robot controlled via Bluetooth commands using Raspberry Pi Pico and Android app.",
       detailedDescription: [
-        "Waste heat conversion system using Peltier modules",
-        "Thermoelectric generation from temperature differentials",
-        "Heat sink optimization for maximum energy conversion",
-        "Sustainable energy solution from waste materials",
-        "Energy efficiency optimization techniques",
+        "Designed and assembled a robust chassis integrating motor drivers (L298N) and power management circuits.",
+        "Implemented stable operation through optimized power management and motor control.",
+        "Programmed motion control algorithms in MicroPython ensuring smooth navigation.",
+        "Achieved precise speed regulation via mobile commands through Bluetooth interface.",
+        "Developed Android application for intuitive robot control interface.",
+        "Implemented obstacle avoidance and path planning algorithms.",
       ],
       technologies: [
-        "Peltier Modules",
-        "Thermoelectric Generation",
-        "Heat Sinks",
-        "Energy Conversion",
-        "Sustainable Energy",
+        "Raspberry Pi Pico W",
+        "MicroPython",
+        "Bluetooth",
+        "L298N Motor Driver",
+        "Android Development",
+        "Robotics",
       ],
-      icon: <Zap className="text-gray-700" size={24} />,
+      icon: <Cpu className="text-gray-700" size={24} />,
     },
     {
       id: 4,
-      title: "Househunt: Finding your Perfect Rental Home",
+      title: "Renewable Generation Forecasting and Load Demand Control",
       description:
-        "Developed responsive user interfaces for property listings, search filters, and user/owner dashboards.",
+        "Developed energy management system with automatic source-shifting between renewable and grid supply.",
       detailedDescription: [
-        "Responsive property listing interface with advanced filtering",
-        "User and owner dashboards with different access levels",
-        "Modern UI/UX design principles implementation",
-        "Cross-platform compatibility",
-        "Real-time search and filtering capabilities",
+        "Developed an automatic source-shifting mechanism using Arduino UNO.",
+        "Implemented load-demand monitoring using sensors to simulate variable load patterns.",
+        "Integrated decision logic for load scheduling based on priority and available energy.",
+        "Created forecasting algorithms for renewable energy generation prediction.",
+        "Implemented smart grid integration for optimal energy distribution.",
+        "Developed user interface for monitoring energy consumption and generation patterns.",
       ],
       technologies: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Bootstrap",
-        "Material UI",
-        "Responsive Design",
+        "Arduino UNO",
+        "Renewable Energy",
+        "Energy Management",
+        "Load Forecasting",
+        "Smart Grid",
+        "Sensor Networks",
       ],
-      icon: <Cctv className="text-gray-700" size={24} />,
+      icon: <Zap className="text-gray-700" size={24} />,
     },
   ];
 
   const skills = {
-    programming: ["C", "Embedded C", "Python", "SQL"],
+    programming: ["C Programming", "Python", "SQL"],
     embeddedSystems: [
-      "ESP32",
+      "Embedded Applications",
+      "EVT Prototyping",
+      "PCB Designing",
       "Arduino",
-      "STM32",
+      "ESP32",
       "Raspberry Pi",
-      "Sensor Integration",
-      "Real-time Firmware",
     ],
-    communicationProtocols: ["UART", "SPI", "I2C", "WiFi", "Bluetooth"],
-    hardware: [
-      "Circuit Design",
-      "Component Integration",
-      "Power Management",
-      "PCB Design",
-    ],
-    testing: [
-      "Oscilloscope",
-      "Multimeter",
-      "Signal Analysis",
-      "Systematic Debugging",
-    ],
-    developmentTools: [
-      "Arduino IDE",
-      "MATLAB",
-      "EasyEDA",
+    designTools: [
+      "Fusion 360",
       "Tinkercad",
-      "Multisim",
+      "EasyEDA",
+      "3D Model Designing",
+      "CAD/CAM",
     ],
-    workstationTools: ["VMware", "Cisco Packet Tracer", "VS Code"],
+    simulationTools: ["MATLAB", "Multisim", "B2Spice"],
+    energySystems: [
+      "Power Systems",
+      "Renewable Energy",
+      "Electric Vehicles",
+      "Battery Management",
+    ],
+    automation: [
+      "Industrial Automation",
+      "PLC Programming",
+      "Control Systems",
+      "IoT Integration",
+    ],
     webDevelopment: [
-      "HTML5",
-      "CSS3",
+      "HTML",
       "JavaScript",
-      "React.js",
-      "Tailwind CSS",
-      "Bootstrap",
+      "Java",
+      "MySQL",
+      "Full Stack Development",
     ],
   };
 
@@ -292,49 +296,75 @@ const App = () => {
         return (
           <div className="space-y-8">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-              <div className="w-48 h-50 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg flex-shrink-0">
+              <div className="w-48 h-60 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg flex-shrink-0">
                 <img
-                  src="https://res.cloudinary.com/dzinfdirr/image/upload/v1767020437/WhatsApp_Image_2025-12-29_at_20.24.58_dwtpqr.jpg"
-                  alt="Profile"
+                  src="https://res.cloudinary.com/dzinfdirr/image/upload/v1767025487/WhatsApp_Image_2025-12-29_at_21.54.09_mvipo2.jpg"
+                  alt="Papana Sumanth"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl font-bold text-gray-800 mb-2">
-                  Bandireddy Shalem Raja
+                  Papana Sumanth
                 </h2>
                 <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full mb-4">
                   <Cpu size={20} className="text-gray-600" />
                   <p className="text-lg font-semibold text-gray-700">
-                    Embedded Systems & IoT Specialist
+                    Electrical & Electronics Engineer | AI & Autonomous Systems
                   </p>
                 </div>
                 <div className="space-y-3 text-gray-700">
                   <p className="flex items-center gap-2">
                     <GraduationCap className="text-gray-600" size={18} />
                     <span>
-                      <strong>Education:</strong> B.Tech in ECE, KL University
-                      (CGPA: 9.46)
+                      <strong>Education:</strong> B.Tech in Electrical and
+                      Electronics Engineering, KL University (CGPA: 9.15)
                     </span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Zap className="text-gray-600" size={18} />
                     <span>
-                      <strong>Specialization:</strong> Embedded Systems & IoT
+                      <strong>Specialization:</strong> AI & Autonomous Systems
                     </span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Mail className="text-gray-600" size={18} />
                     <span>
-                      <strong>Email:</strong> 2200049134ece@gmail.com
+                      <strong>Email:</strong> 2200069036eee@gmail.com
                     </span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="text-gray-600" size={18} />
                     <span>
-                      <strong>Phone:</strong> +91 9618217797
+                      <strong>Phone:</strong> +91 9392659512
                     </span>
                   </p>
+                  <p className="flex items-center gap-2">
+                    <MapPin className="text-gray-600" size={18} />
+                    <span>
+                      <strong>Location:</strong> Guntur, Andhra Pradesh, India
+                    </span>
+                  </p>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  <a
+                    href="https://www.linkedin.com/in/sumanth-papana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Linkedin size={20} />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://github.com/SumanthPapana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+                  >
+                    <Github size={20} />
+                    <span>GitHub</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -345,14 +375,14 @@ const App = () => {
                 Professional Summary
               </h3>
               <p className="text-gray-700 leading-relaxed relative z-10">
-                Motivated Electronics and Communication Engineering student
-                specializing in Embedded Systems & IoT, seeking opportunities
-                where I can apply my skills in Embedded C programming, sensor
-                interfacing, communication protocols, and system testing. Eager
-                to contribute to real-world embedded product development while
-                gaining hands-on experience in firmware design, hardware
-                bring-up, and debugging within a professional engineering
-                environment.
+                A dedicated Fourth-year Electrical and Electronics Engineering
+                student with a passion for technology and a solid understanding
+                of core concepts. Specializing in AI & Autonomous Systems with
+                expertise in embedded systems, EV prototyping, 3D modeling, and
+                renewable energy systems. Seeking opportunities to leverage my
+                knowledge and enthusiasm in a dynamic environment where I can
+                contribute to innovative projects and continue to grow both
+                personally and professionally.
               </p>
             </div>
           </div>
@@ -373,20 +403,20 @@ const App = () => {
                     Bachelor of Technology (B.Tech)
                   </h3>
                   <p className="text-gray-600">
-                    Electronics and Communication Engineering
+                    Electrical and Electronics Engineering
                   </p>
                   <p className="text-gray-600 font-medium">
                     KL University, Guntur, AP
                   </p>
                   <p className="text-gray-500 text-sm mt-2">
-                    Aug 2023 - Present
+                    July 2025 - Pursuing
                   </p>
                   <div className="mt-3 inline-flex items-center gap-2 bg-gray-100 px-4 py-1 rounded-full">
                     <span className="text-gray-800 font-bold">
-                      CGPA: 9.46/10
+                      CGPA: 9.15/10
                     </span>
                     <span className="text-gray-600">
-                      | Stream: Embedded Systems & IoT
+                      | Stream: AI & Autonomous Systems
                     </span>
                   </div>
                 </div>
@@ -400,17 +430,17 @@ const App = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-800">
-                    Diploma in Electronics and Communication Engineering
+                    Diploma in Electrical and Electronics Engineering
                   </h3>
                   <p className="text-gray-600">
-                    Aditya College of Engineering, Sutampalem, AP
+                    Anubose Institute of Technology, Palvancha, TG
                   </p>
                   <p className="text-gray-500 text-sm mt-2">
                     Dec 2020 - June 2023
                   </p>
                   <div className="mt-3 inline-flex items-center gap-2 bg-gray-100 px-4 py-1 rounded-full">
                     <span className="text-gray-800 font-bold">
-                      Percentage: 90.99%
+                      CGPA: 6.96/10
                     </span>
                   </div>
                 </div>
@@ -426,10 +456,15 @@ const App = () => {
                   <h3 className="text-xl font-bold text-gray-800">
                     Secondary School Certificate (SSC)
                   </h3>
-                  <p className="text-gray-600">Suryadeep EM High School</p>
+                  <p className="text-gray-600">
+                    KPR's Gowtham School, Sathupalli, TG
+                  </p>
+                  <p className="text-gray-500 text-sm mt-2">
+                    June 2019 - March 2020
+                  </p>
                   <div className="mt-3 inline-flex items-center gap-2 bg-gray-100 px-4 py-1 rounded-full">
                     <span className="text-gray-800 font-bold">
-                      Percentage: 93.17%
+                      CGPA: 9.7/10
                     </span>
                   </div>
                 </div>
@@ -471,7 +506,7 @@ const App = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <Cpu className="text-gray-700" size={28} />
                   <h3 className="text-xl font-bold text-gray-800">
-                    Embedded Systems
+                    Embedded Systems & Hardware
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
@@ -486,16 +521,16 @@ const App = () => {
                 </div>
               </div>
 
-              {/* Communication Protocols */}
+              {/* Design Tools */}
               <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <Wifi className="text-gray-700" size={28} />
+                  <Settings className="text-gray-700" size={28} />
                   <h3 className="text-xl font-bold text-gray-800">
-                    Communication Protocols
+                    Design & Simulation Tools
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  {skills.communicationProtocols.map((skill) => (
+                  {skills.designTools.map((skill) => (
                     <span
                       key={skill}
                       className="bg-gray-50 px-4 py-2 rounded-full border border-gray-200 text-gray-700 font-medium"
@@ -506,36 +541,36 @@ const App = () => {
                 </div>
               </div>
 
-              {/* Hardware Development */}
-              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
-                  <Zap className="text-gray-700" size={28} />
-                  <h3 className="text-xl font-bold text-gray-800">
-                    Hardware Development
-                  </h3>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  {skills.hardware.map((skill) => (
-                    <span
-                      key={skill}
-                      className="bg-gray-50 px-4 py-2 rounded-full border border-gray-200 text-gray-700 font-medium"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Testing & Debugging */}
+              {/* Simulation Tools */}
               <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">
                   <TestTube className="text-gray-700" size={28} />
                   <h3 className="text-xl font-bold text-gray-800">
-                    Testing & Debugging
+                    Simulation & Analysis
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  {skills.testing.map((skill) => (
+                  {skills.simulationTools.map((skill) => (
+                    <span
+                      key={skill}
+                      className="bg-gray-50 px-4 py-2 rounded-full border border-gray-200 text-gray-700 font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Energy Systems */}
+              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-4">
+                  <Zap className="text-gray-700" size={28} />
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Energy Systems
+                  </h3>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  {skills.energySystems.map((skill) => (
                     <span
                       key={skill}
                       className="bg-gray-50 px-4 py-2 rounded-full border border-gray-200 text-gray-700 font-medium"
@@ -551,7 +586,7 @@ const App = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <Code className="text-gray-700" size={28} />
                   <h3 className="text-xl font-bold text-gray-800">
-                    Web Development
+                    Web Development & Automation
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
@@ -620,7 +655,7 @@ const App = () => {
                           <div>
                             <p className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                               <Zap size={18} className="text-gray-600" />
-                              Technologies Used:
+                              Technologies & Domains:
                             </p>
                             <div className="flex flex-wrap gap-2">
                               {exp.technologies.map((tech) => (
@@ -650,42 +685,6 @@ const App = () => {
                   </div>
                 </div>
               ))}
-
-              {/* Research Experience */}
-              <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                <div className="flex items-start gap-4">
-                  <div className="bg-gray-100 p-3 rounded-lg">
-                    <TestTube className="text-gray-700" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-800">
-                      Research Experience
-                    </h3>
-                    <p className="text-gray-600 font-semibold">
-                      IoT Development Boards | Dr K. Sripathi Roy
-                    </p>
-                    <div className="space-y-3 mt-4">
-                      <p className="text-gray-700 flex items-start gap-2">
-                        <span className="w-2 h-2 bg-gray-400 rounded-full mt-2"></span>
-                        Conducted comprehensive performance analysis of multiple
-                        IoT development boards including ESP32, STM32, Arduino,
-                        and Raspberry Pi
-                      </p>
-                      <p className="text-gray-700 flex items-start gap-2">
-                        <span className="w-2 h-2 bg-gray-400 rounded-full mt-2"></span>
-                        Evaluated processing capabilities, power consumption
-                        metrics, and communication efficiency across various
-                        sensor interfacing scenarios
-                      </p>
-                      <p className="text-gray-700 flex items-start gap-2">
-                        <span className="w-2 h-2 bg-gray-400 rounded-full mt-2"></span>
-                        Implemented sensor fusion algorithms across platforms to
-                        measure execution speed and memory utilization
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         );
@@ -739,7 +738,7 @@ const App = () => {
                   {selectedProject === project.id && (
                     <div className="mt-4 pt-4 border-t border-gray-200 space-y-3">
                       <p className="font-bold text-gray-800 mb-2">
-                        Key Features:
+                        Key Features & Achievements:
                       </p>
                       <div className="space-y-2">
                         {project.detailedDescription.map((feature, idx) => (
@@ -782,7 +781,12 @@ const App = () => {
               {certifications.map((cert, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 hover:shadow-md transition-all duration-300"
+                  onClick={() =>
+                    setSelectedCertification(
+                      selectedCertification === idx ? null : idx
+                    )
+                  }
+                  className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 hover:shadow-md transition-all duration-300 cursor-pointer"
                 >
                   <div className="h-48 overflow-hidden">
                     <img
@@ -808,15 +812,44 @@ const App = () => {
                         <p className="text-gray-600 text-sm">{cert.issuer}</p>
                       </div>
                     </div>
-                    <a
-                      href={cert.verifyLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2.5 rounded-lg hover:bg-gray-900 transition-all duration-300 font-medium"
-                    >
-                      Verify Certificate
-                      <ExternalLink size={16} />
-                    </a>
+
+                    <p className="text-gray-700 mb-4">{cert.description}</p>
+
+                    {selectedCertification === idx && (
+                      <div className="mt-4 pt-4 border-t border-gray-200 space-y-3">
+                        <p className="font-bold text-gray-800 mb-2">
+                          Key Learnings:
+                        </p>
+                        <div className="space-y-2">
+                          {cert.details.map((detail, idx) => (
+                            <p
+                              key={idx}
+                              className="text-gray-700 text-sm flex items-start gap-2"
+                            >
+                              <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                              {detail}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="mt-4 flex items-center justify-between">
+                      <a
+                        href={cert.verifyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-gray-800 text-white px-5 py-2.5 rounded-lg hover:bg-gray-900 transition-all duration-300 font-medium"
+                      >
+                        Verify Certificate
+                        <ExternalLink size={16} />
+                      </a>
+                      <p className="text-gray-600 text-sm">
+                        {selectedCertification === idx
+                          ? "Click to collapse"
+                          : "Click for details"}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -855,29 +888,6 @@ const App = () => {
                   </p>
                 </div>
               ))}
-
-              {/* Leadership */}
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="bg-gray-100 p-2 rounded-lg">
-                    <Award className="text-gray-700" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-800 mb-1">
-                      Club Member - Review Tech
-                    </h3>
-                    <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">
-                      Leadership Role
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-700 text-sm">
-                  Cultivated a supportive atmosphere within the club, enhancing
-                  knowledge exchange and skill development. Organized regular
-                  workshops for over 30 members, resulting in tangible
-                  improvements in project outcomes.
-                </p>
-              </div>
             </div>
           </div>
         );
@@ -899,10 +909,10 @@ const App = () => {
                     <div>
                       <p className="text-sm text-gray-600 font-medium">Email</p>
                       <a
-                        href="mailto:2200049134ece@gmail.com"
+                        href="mailto:2200069036eee@gmail.com"
                         className="text-gray-800 font-bold text-lg hover:text-gray-600 transition-colors"
                       >
-                        2200049134ece@gmail.com
+                        2200069036eee@gmail.com
                       </a>
                     </div>
                   </div>
@@ -916,10 +926,10 @@ const App = () => {
                     <div>
                       <p className="text-sm text-gray-600 font-medium">Phone</p>
                       <a
-                        href="tel:+919618217797"
+                        href="tel:+919392659512"
                         className="text-gray-800 font-bold text-lg hover:text-gray-600 transition-colors"
                       >
-                        +91 9618217797
+                        +91 9392659512
                       </a>
                     </div>
                   </div>
@@ -952,12 +962,12 @@ const App = () => {
                           LinkedIn
                         </p>
                         <a
-                          href="https://linkedin.com/in/shalemrajabandireddy"
+                          href="https://linkedin.com/in/sumanth-papana"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-gray-800 font-bold hover:text-gray-600 transition-colors"
                         >
-                          /shalemrajabandireddy
+                          /sumanth-papana
                         </a>
                       </div>
                     </div>
@@ -973,12 +983,12 @@ const App = () => {
                           GitHub
                         </p>
                         <a
-                          href="https://github.com/Shalem99"
+                          href="https://github.com/SumanthPapana"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-gray-800 font-bold hover:text-gray-600 transition-colors"
                         >
-                          /Shalem99
+                          /SumanthPapana
                         </a>
                       </div>
                     </div>
@@ -1004,7 +1014,9 @@ const App = () => {
               <div className="bg-gray-100 p-2 rounded-lg">
                 <Cpu className="text-gray-700" size={24} />
               </div>
-              <h1 className="text-2xl font-bold text-gray-800">Shalem Raja</h1>
+              <h1 className="text-2xl font-bold text-gray-800">
+                Papana Sumanth
+              </h1>
             </div>
 
             {/* Desktop Navigation */}
@@ -1067,15 +1079,19 @@ const App = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
-              <p className="text-lg font-bold mb-1">Bandireddy Shalem Raja</p>
+              <p className="text-lg font-bold mb-1">Papana Sumanth</p>
               <p className="text-gray-300 text-sm">
-                Embedded Systems & IoT Specialist | Electronics & Communication
-                Engineer
+                Electrical & Electronics Engineer | AI & Autonomous Systems
+                Specialist
+              </p>
+              <p className="text-gray-400 text-sm mt-1">
+                I hereby declare that the above written particulars are true to
+                my knowledge and belief.
               </p>
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="https://linkedin.com/in/shalemrajabandireddy"
+                href="https://linkedin.com/in/sumanth-papana"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
@@ -1083,7 +1099,7 @@ const App = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com/Shalem99"
+                href="https://github.com/SumanthPapana"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
@@ -1091,7 +1107,7 @@ const App = () => {
                 <Github size={20} />
               </a>
               <a
-                href="mailto:2200049134ece@gmail.com"
+                href="mailto:2200069036eee@gmail.com"
                 className="bg-gray-700 hover:bg-gray-600 p-2 rounded-lg transition-colors"
               >
                 <Mail size={20} />
@@ -1110,3 +1126,4 @@ const App = () => {
 };
 
 export default App;
+
